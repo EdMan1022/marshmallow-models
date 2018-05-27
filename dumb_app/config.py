@@ -5,20 +5,6 @@ dev_db_uri = environ['dev_db_uri']
 test_db_uri = environ['test_db_uri']
 production_db_uri = environ['production_db_uri']
 
-db_type_dict = {
-    "local": local_db_uri,
-    "dev": dev_db_uri,
-    "test": test_db_uri,
-    "production": production_db_uri
-}
-
-debug_type_dict = {
-    "local": "debug",
-    "dev": dev_db_uri,
-    "test": test_db_uri,
-    "production": production_db_uri
-}
-
 
 class BaseConfig(object):
 
